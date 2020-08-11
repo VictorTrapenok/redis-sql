@@ -186,7 +186,7 @@ local function getRowsFromTable(tableName)
     for _,key in ipairs(matches) do
         local sJSON = redis.call('GET', key) 
         local tDecoded = cjson.decode(sJSON) 
-         
+        tDecoded['_pry_key'] = key
         if whereCheck(tDecoded) then
             coroutine.yield(tDecoded)
         end 
