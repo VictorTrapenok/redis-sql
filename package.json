@@ -2,7 +2,7 @@
   "name": "redis-sql",
   "description": "Generates redis eval command from sql query",
   "author": "Trapenok Victor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/Levhav/redis-sql.git",
